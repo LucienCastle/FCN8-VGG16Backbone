@@ -20,6 +20,7 @@ The dataset images and annotations. The images contain the video frames while th
 ## Model
 ### VGG-16 Network
 The backbone used is VGG-16, without the fully connected layers, initialized with pretrained weights. The architecture of a VGG-16 network is as follows:
+<br>
 <img src='https://iq.opengenus.org/content/images/2019/01/vgg_layers.png' alt='vgg-16'>
 
 ### FCN-8
@@ -29,7 +30,8 @@ FCN-8 is a fully convolutional network which upsamples the feature extracted by 
 ## Metrics
 Metrics used are IoU and Dice Score.
 <br>
-![](https://latex.codecogs.com/svg.image?\bg{black}IOU&space;=&space;\frac{area\_of\_overlap}{area\_of\_union})
+![](https://latex.codecogs.com/svg.image?\inline&space;IoU&space;=&space;\frac{area\_of\_overlap}{area\_of\_union})
 <br>
-![](https://latex.codecogs.com/svg.image?\bg{white}Dice&space;Score&space;=&space;\frac{area\_of\_overlap}{combinded\_area})
+![](https://latex.codecogs.com/svg.image?\inline&space;Dice&space;Score&space;=&space;\frac{area\_of\_overlap}{combined\_area})
+<br>
 A smoothing factor can be added in both numerator and denominator to avoid 0 division
