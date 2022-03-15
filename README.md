@@ -28,7 +28,7 @@ FCN-8 is a fully convolutional network which upsamples the feature extracted by 
 
 ## Metrics
 Metrics used are IoU and Dice Score.
-<img src="https://latex.codecogs.com/svg.image?IOU&space;=&space;\frac{area\_of\_overlap}{area\_of\_union}" title="https://latex.codecogs.com/svg.image?IOU = \frac{area\_of\_overlap}{area\_of\_union}" />
+![\Large IoU = \frac{area\_of\_overlap}}{area\_of\_union}](https://latex.codecogs.com/svg.image?IOU&space;=&space;\frac{area\_of\_overlap}{area\_of\_union})
 <br>
 $$Dice Score = 2 * \frac{area\_of\_overlap}{combined\_area}$$
 A smoothing factor can be added in both numerator and denominator to avoid 0 division
