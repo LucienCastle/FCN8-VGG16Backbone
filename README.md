@@ -17,3 +17,11 @@ The dataset images and annotations. The images contain the video frames while th
 | 9      | pedestrian |
 | 10      | byciclist      |
 | 11      | void      |
+## Model
+### VGG-16 Network
+The backbone used is VGG-16, without the fully connected layers, initialized with pretrained weights. The architecture of a VGG-16 network is as follows:
+<img src='https://iq.opengenus.org/content/images/2019/01/vgg_layers.png' alt='vgg-16'>
+
+### FCN-8
+FCN-8 is a fully convolutional network which upsamples the feature extracted by encoder and creates a pixel-wise labelmap
+<img src='https://drive.google.com/uc?export=view&id=1lrqB4YegV8jXWNfyYAaeuFlwXIc54aRP' alt='fcn-8'>
