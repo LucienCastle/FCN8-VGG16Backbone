@@ -25,3 +25,10 @@ The backbone used is VGG-16, without the fully connected layers, initialized wit
 ### FCN-8
 FCN-8 is a fully convolutional network which upsamples the feature extracted by encoder and creates a pixel-wise labelmap
 <img src='https://drive.google.com/uc?export=view&id=1lrqB4YegV8jXWNfyYAaeuFlwXIc54aRP' alt='fcn-8'>
+
+## Metrics
+Metrics used are IoU and Dice Score.
+$$IOU = \frac{area\_of\_overlap}{area\_of\_union}$$
+<br>
+$$Dice Score = 2 * \frac{area\_of\_overlap}{combined\_area}$$
+A smoothing factor can be added in both numerator and denominator to avoid 0 division
